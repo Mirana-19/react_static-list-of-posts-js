@@ -13,7 +13,7 @@ function findComments(id) {
 }
 
 export const PostInfo = ({ post }) => (
-  <li className="PostInfo">
+  <div className="PostInfo">
     <div className="PostInfo__header">
       <h3 className="PostInfo__title">{post.title}</h3>
 
@@ -23,5 +23,5 @@ export const PostInfo = ({ post }) => (
     <p className="PostInfo__body">{post.body}</p>
 
     <CommentList comments={findComments(post.id)} />
-  </li>
+  </div>
 );
