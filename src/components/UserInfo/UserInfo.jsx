@@ -3,7 +3,7 @@ export const UserInfo = ({ user }) => (
     {' Posted by  '}
 
     <a className="UserInfo" href={`mailto:${user.email}`}>
-      Leanne Graham
+      {user.name}
     </a>
   </p>
 );
